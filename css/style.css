@@ -70,7 +70,7 @@ body {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -215,11 +215,13 @@ header .d-fl .header__contact-address {
 }
 .services__service-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0;
 }
 .services__service-list-item {
+  margin: 0 auto;
   cursor: pointer;
   width: 270px;
 }
