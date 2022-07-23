@@ -1,7 +1,8 @@
 @import '_reset.scss';
 @import '_vars.scss';
 @import '_fonts.scss';
-@import '_mixins.scss'
+@import '_mixins.scss';
+@import '_media.scss';
 
 * {
     box-sizing: border-box;
@@ -10,6 +11,17 @@
 body {
     font-family: 'Circe', sans-serif;
 }
+
+// .fade {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100wh;
+//     height: 100vh;
+//     z-index: 100;
+//     background: rgba(119, 119, 119, 0.8);
+//     mix-blend-mode: multiply;
+// }
 
 .container {
     max-width: 1170px;
@@ -30,6 +42,7 @@ header {
             .header__menu {
                 &-list {
                     display: flex;
+                    justify-content: space-between;
                     gap: 50px;
                     &-item {
                         a {
@@ -78,6 +91,8 @@ header {
                     text-decoration: none;
                     font-weight: bold;
                     font-size: 24px;
+                    margin-top: 0;
+                    line-height: 100%;
                     color: $third-color;
                     transition: 0.25s all;
                     &:hover {
@@ -91,11 +106,23 @@ header {
                     opacity: 0.5;
                 }
             }
+            .header__burger {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                &-line {
+                    width: 40px;
+                    height: 4px;
+                    border-radius: 4px;
+                    background: $third-color;
+                }
+            }
         }
 }
 
 .promo {
-    min-height: 940px;
+    max-height: 100vh;
+    overflow: hidden;
     background: $first-color;
     .swiper {
         width: 100%;
@@ -103,6 +130,8 @@ header {
     }
     &-bg {
         background: url('../img/promo-background.png');
+        background-size: cover;
+        background-position: center;
         min-height: 940px;
     }
     .container {
@@ -140,7 +169,7 @@ header {
     &__service {
         &-list {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             flex-wrap: wrap;
             gap: 30px;
             padding: 50px 0;
@@ -241,7 +270,8 @@ header {
         &-list {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 30px;
             &-item {
                 width: 370px;
                 height: 370px;
@@ -269,7 +299,6 @@ header {
                     line-height: 150%;
                 }
                 &-link {
-                    opacity: 0;
                     position: absolute;
                     right: 24px;
                     bottom: 24px;
@@ -302,6 +331,7 @@ header {
     }
     &__discount {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         margin-top: 50px;
