@@ -8,7 +8,6 @@
 
 body {
     font-family: 'Circe', sans-serif;
-    background: url('../img/main-bg.png');
 }
 
 .container {
@@ -19,7 +18,7 @@ body {
 header {
     width: 100%;
     position: absolute;
-    
+    z-index: 2;
         .d-fl {
             display: flex;
             align-items: center;
@@ -96,7 +95,15 @@ header {
 
 .promo {
     min-height: 940px;
-    // background: url('../img/promo-background.png');
+    background: $first-color;
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    &-bg {
+        background: url('../img/promo-background.png');
+        min-height: 940px;
+    }
     .container {
         padding-top: 340px;
         .content {
@@ -145,6 +152,7 @@ header {
 }
 
 .services {
+    background: url('../img/main-bg.png');
     &__heading-2 {
         font-weight: 800;
         font-size: 42px;

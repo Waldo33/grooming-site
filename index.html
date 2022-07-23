@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Grooming</title>
 </head>
 <body>
@@ -12,13 +13,13 @@
         <div class="container">
             <div class="d-fl">
                 <div class="header__logo">
-                    <a href="#">
+                    <a href="/">
                         <img width="157" height="100" src="./img/logo.svg" alt="">
                     </a>
                 </div>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
-                        <li class="header__menu-list-item"><a href="#">Наши услуги</a></li>
+                        <li class="header__menu-list-item"><a href="#services">Наши услуги</a></li>
                         <li class="header__menu-list-item"><a href="#">О компании</a></li>
                         <li class="header__menu-list-item"><a href="#">Отзывы</a></li>
                         <li class="header__menu-list-item"><a href="#">Контакты</a></li>
@@ -52,20 +53,28 @@
     </header>
     <main>
         <div class="promo">
-            <div class="container">
-                <div class="content">
-                    <h1 class="promo__heading-1">Первый СПА-салон<br>для любимых хвостиков</h1>
-                    <p class="promo__text">
-                        Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. 
-                    </p>
-                    <button class="promo__btn">
-                        <img src="img/paw.svg" alt="">
-                        Записаться
-                    </button>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="promo-bg">
+                            <div class="container">
+                                <div class="content">
+                                    <h1 class="promo__heading-1">Первый СПА-салон<br>для любимых хвостиков</h1>
+                                    <p class="promo__text">
+                                        Человеческий организм получает почти все необходимые вещества именно через пищу и воду. С питанием связаны все жизненно важные функции организма. 
+                                    </p>
+                                    <button class="promo__btn">
+                                        <img src="img/paw.svg" alt="">
+                                        Записаться
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="services">
+        <div id="services" class="services">
             <div class="container">
                 <h2 class="services__heading-2">Наши услуги</h2>
                 <div class="services__service-list">
@@ -244,5 +253,7 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
