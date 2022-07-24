@@ -108,10 +108,16 @@ table {
   h2.services__heading-2 {
     font-size: 30px;
   }
+  .promo .container {
+    padding-top: 250px !important;
+  }
 }
 @media screen and (max-width: 965px) {
   .container .services__heading-2 {
     text-align: center;
+  }
+  .promo .container {
+    padding-top: 250px !important;
   }
 }
 @media screen and (max-width: 767px) {
@@ -134,6 +140,9 @@ table {
   }
 }
 @media screen and (max-width: 515px) {
+  .promo .container {
+    padding-top: 180px !important;
+  }
   .container {
     padding: 0 15px;
   }
@@ -174,6 +183,12 @@ table {
   }
   div.promo-bg .container .content p.promo__text {
     width: 100%;
+  }
+}
+@media screen and (max-width: 356px) {
+  a.header__contact-phone {
+    font-size: 16px !important;
+    margin: 0 10px !important;
   }
 }
 * {
