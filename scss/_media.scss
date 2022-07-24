@@ -39,13 +39,14 @@
                     }
                 }
                 .header__contact {
+                    margin-right: 50px;
                     width: 270px;
                     address.header__contact-address {
                         font-size: 16px;
                     }
                 }
                 div.header__burger {
-                    display: flex;
+                    display: block;
                 }
             }
             .promo {
@@ -84,6 +85,9 @@
                         display: none !important;
                     }
                 }
+                &__contact {
+                    margin-right: 50px;
+                }
             }
         }
     }
@@ -109,7 +113,7 @@
                 width: 270px;
                 a.header__contact-phone {
                     font-size: 16px;
-                    margin-right: 20px;
+                    margin-right: 50px;
                 }
                 address.header__contact-address {
                     display: none;
