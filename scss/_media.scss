@@ -58,7 +58,9 @@
                 }
             }
         }
-            
+        h2.services__heading-2 {
+            font-size: 30px;
+        } 
 }
 
 @media screen and (max-width: 965px) {
@@ -69,6 +71,7 @@
             }
         }
     }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -93,6 +96,9 @@
             }
         }
     }
+    span.services__discount-descr {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 515px) {
@@ -107,6 +113,33 @@
                 }
                 address.header__contact-address {
                     display: none;
+                }
+            }
+        }
+    }
+    .services {
+        &__price-list {
+            &-item {
+                width: 100%;
+            }
+        }
+        &__discount {
+            &-descr {
+                font-size: 2em !important;
+            }
+            &-stock {
+                &-card {
+                    width: 100%;
+                    &-image {
+                        width: 50%;
+                    }
+                }
+            }
+            &-bonus {
+                &-card {
+                    &-image {
+                        width: 50%;
+                    }
                 }
             }
         }
